@@ -21,6 +21,7 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
+    //alt + insert 생성자
     @Override
     public Member save(Member member) {
         SimpleJdbcInsert jdbcInsert = new SimpleJdbcInsert(jdbcTemplate);
